@@ -57,4 +57,4 @@ To finish my lab, I decided to observe RDP traffic. The filter for Wireshark is 
 ![tcp 3389](https://github.com/user-attachments/assets/dfd1d8ec-670f-4245-a12e-a3312f26a990)
 
 <h2>Lessons Learned</h2>
-The purpose of this lab is to see how different protocols and ports are utilized in a network between devices. While troubleshooting, I need to utilize different tools like Wireshark and the command line to see how traffic flows in a network through ports and protocols.
+The purpose of this lab is to see how different protocols and ports are utilized in a network between devices. This project strengthened my understanding of cloud networking and security by configuring Azure NSGs and analyzing real-time traffic with Wireshark. I gained hands-on experience with key protocols (ICMP, SSH, DNS, DHCP, RDP) and learned how security rules impact network communication. It also improved my troubleshooting skills through protocol filtering and traffic analysis.
