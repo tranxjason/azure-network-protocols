@@ -26,7 +26,7 @@ Within Azure, I created two VMs within the same virtual network to ensure they a
 
 Using Remote Desktop Connection, I connect to the Windows VM using its public IP address. From there, I installed Wireshark in order to begin inspecting traffic.
 
-![image alt](https://github.com/tranxjason/Azure/blob/main/rd1.jpg)
+![rd1](https://github.com/user-attachments/assets/f095fc03-68ed-4765-8c24-40e0f98bea76)
 
 Within Wireshark, I filtered for ICMP (Internet Control Message Protocol) traffic and opened PowerShell to execute a command called ping. Ping utilizes ICMP, which is used by devices in a network to communicate problems within data transmition. I used ping to see if I can communicate with the Ubuntu VM using its private IP address and with google.com. Afterwards, I used a perpetual ping to the Ubuntu VM in order to see how network security groups work. I executed the perpetual ping with the command: ping -t (ip address).
 
@@ -45,7 +45,5 @@ Next, I chose to examine SSH traffic. I logged in to the Ubuntu server via Power
 ![image alt](https://github.com/tranxjason/Azure/blob/main/ssh.jpg)
 
 After examining SSH traffic, I exited the Ubuntu server in order to filter for DHCP traffic. To see it in action, I decided to attempt to issue a new IP address from my VM. The command ipconfig /renew will attempt to issue the new IP address and will temporarily disconnect me for a few seconds. After reconnecting, the resulting traffic is shown in Wireshark.
-
-![image alt](https://github.com/tranxjason/Azure/blob/main/ssh.jpg)
 
 ![dhcp](https://github.com/user-attachments/assets/ee17eb6b-8dea-4b53-81b7-0388554b7f88)
